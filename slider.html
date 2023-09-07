@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" />
+    <link rel="stylesheet" href="style.css" />
+ </head>
+<body>
+    <div class="blog-slider">
+        <div class="book-slider-wrp swiper-wrapper">
+          <div class="book-slider-item swiper-slide">
+            <div class="book-slider-img">
+              <img src="./death-watch.png" alt="">
+            </div>
+            <div class="book-slider-content">
+              <span class="book-slider-code">7 September 2023</span>
+              <div class="book-slider-title">Lorem Ipsum Dolor</div>
+              <div class="book-slider-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+              <a href="#" class="book-slider-button">READ MORE</a>
+            </div>
+          </div>
+          <div class="book-slider-item swiper-slide">
+            <div class="book-slider-img">
+              <img src="./death-watch.png" alt="">
+            </div>
+            <div class="book-slider-content">
+              <span class="book-slider-code">7 September 2023</span>
+              <div class="book-slider-title">Lorem Ipsum Dolor2</div>
+              <div class="book-slider-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <a href="#" class="book-slider-button">READ MORE</a>
+            </div>
+          </div> 
+          <div class="book-slider-item swiper-slide">
+            <div class="book-slider-img">
+              <img src="./death-watch.png" alt="">
+            </div>
+            <div class="book-slider-content">
+              <span class="book-slider-code">7 September 2023</span>
+              <div class="book-slider-title">Lorem Ipsum Dolor</div>
+              <div class="book-slider-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <a href="#" class="book-slider-button">READ MORE</a>
+            </div>
+          </div>
+          
+        </div>
+        <div class="book-slider-pagination"></div>
+        <div class="book-slider-navigation">
+          <div class="book-slider-button-prev"><</div>
+          <div class="book-slider-button-next">></div>
+        </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+      
+      <script>
+        var swiper = new Swiper('.blog-slider', {
+            spaceBetween: 30,
+            effect: 'fade',
+            loop: true,
+            navigation: {
+              nextEl: '.book-slider-button-next',
+              prevEl: '.book-slider-button-prev',
+            },
+            autoplay: {
+              delay: 5000,
+            },
+            mousewheel: {
+                invert: false,
+            },
+            pagination: {
+                el: '.book-slider-pagination',
+                clickable: true,
+            }
+        });
+      </script>
+</body>
+</html>
